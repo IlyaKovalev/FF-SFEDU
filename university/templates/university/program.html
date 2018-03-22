@@ -1,26 +1,27 @@
+{%load static%}
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>University | Typography</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'university/css/bootstrap.css'%}" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
-<script src="js/bootstrap.js"></script>
+<script src="{% static 'university/js/bootstrap.js'%}"></script>
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'university/css/style.css'%}" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.js"></script>
+<script src="{% static 'university/js/jquery.min.js'%}"></script>
+ <script src="{% static 'university/js/bootstrap.js'%}"></script>
 
 </head>
 <body>
-<!-- banner --> 
-<div class="banner2">	  
+<!-- banner -->
+<div class="banner2">
 	 <div class="header">
 			 <div class="logo">
-				 <a href="index.html"><img src="images/logo.jpg" alt=""/></a>
+				 <a href="index.html"><img src="{% static 'university/images/logo.jpg'%}" alt=""/></a>
 			 </div>
 			 <div class="top-menu">
 				 <span class="menu"></span>
@@ -42,7 +43,7 @@
 		 </script>
 		 <!-- script-for-menu -->
 			 <div class="clearfix"></div>
-	 </div>	  
+	 </div>
 </div>
 <!---->
 <!----end-header---->
@@ -138,11 +139,11 @@
 			 <h3 class="ghj">Progress Bars</h3>
 				 <div class="tab-content">
 					  <div class="tab-pane active" id="domprogress">
-						  <div class="progress">    
+						  <div class="progress">
 							<div class="progress-bar progress-bar-primary" style="width: 20%"></div>
 						  </div>
 						  <p>Info with <code>progress-bar-info</code> class.</p>
-						  <div class="progress">    
+						  <div class="progress">
 							<div class="progress-bar progress-bar-info" style="width: 60%"></div>
 						  </div>
 						  <p>Success with <code>progress-bar-success</code> class.</p>
@@ -323,23 +324,23 @@
 								<td><span class="badge badge-danger">999</span></td>
 							</tr>
 						</tbody>
-					  </table>                    
+					  </table>
 				</div>
 				<div class="col-md-6">
 				  <p>Easily highlight new or unread items with the <code>.badge</code> class</p>
-					<div class="list-group list-group-alternate"> 
-						<a href="#" class="list-group-item"><span class="badge">201</span> <i class="ti ti-email"></i> Inbox </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-primary">5021</span> <i class="ti ti-eye"></i> Profile visits </a> 
-						<a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Call </a> 
-						<a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Messages </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a> 
-						<a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Notifications </a> 
+					<div class="list-group list-group-alternate">
+						<a href="#" class="list-group-item"><span class="badge">201</span> <i class="ti ti-email"></i> Inbox </a>
+						<a href="#" class="list-group-item"><span class="badge badge-primary">5021</span> <i class="ti ti-eye"></i> Profile visits </a>
+						<a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Call </a>
+						<a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Messages </a>
+						<a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a>
+						<a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Notifications </a>
 					</div>
 			    </div>
 			   <div class="clearfix"> </div>
 			</div>
-		</div>	
-	</div>	
+		</div>
+	</div>
 	<!----pages-end---->
 	<!---->
 <div class="footer">
@@ -356,7 +357,7 @@
 					 <li><a href="index.html"><span></span>Home</a></li>
 					 <li><a href="about.html"><span></span>About</a></li>
 					 <li><a href="program.html"><span></span>Programs</a></li>
-					 <li><a href="blog.html"><span></span>Blog</a></li>	
+					 <li><a href="blog.html"><span></span>Blog</a></li>
 					 <li><a href="gallery.html"><span></span>Gallery</a></li>
 					 <li><a href="contact.html"><span></span>Contact</a></li>
 				 </ul>
@@ -367,7 +368,7 @@
 					 <li><a href="about.html"><span></span>History</a></li>
 					 <li><a href="about.html"><span></span>Departments</a></li>
 					 <li><a href="gallery.html"><span></span>Services</a></li>
-					 <li><a href="blog.html"><span></span>Guidancs</a></li>	
+					 <li><a href="blog.html"><span></span>Guidancs</a></li>
 					 <li><a href="about.html"><span></span>Team</a></li>
 					 <li><a href="contact.html"><span></span>Contact</a></li>
 				 </ul>

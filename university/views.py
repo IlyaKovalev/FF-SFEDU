@@ -15,4 +15,16 @@ def gallery(request):
 
 def blog(request):
     context={}
-    return render(request, 'university/blog.html', context)    
+    return render(request, 'university/blog.html', context)
+
+def contact(request):
+    context={}
+    return render(request, 'university/contact.html', context)
+
+def program(request):
+    context={}
+    return render(request, 'university/program.html', context)
+
+def single(request):
+    context={}
+    return render(request, 'university/single.html', context)    

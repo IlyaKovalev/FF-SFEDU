@@ -1,26 +1,27 @@
+{%load static%}
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>University | Single</title>
 <!-- jQuery (necessary JavaScript plugins) -->
-<script src="js/bootstrap.js"></script>
+<script src="{% static 'university/js/bootstrap.js'%}"></script>
 <!-- Custom Theme files -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="{% static 'university/css/bootstrap.css'%}" rel='stylesheet' type='text/css' />
+<link href="{% static 'university/css/style.css'%}" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.js"></script>
+<script src="{% static 'university/js/jquery.min.js'%}"></script>
+ <script src="{% static 'university/js/bootstrap.js'%}"></script>
 
 </head>
 <body>
-<!-- banner --> 
-<div class="banner2">	  
+<!-- banner -->
+<div class="banner2">
 	 <div class="header">
 			 <div class="logo">
-				 <a href="index.html"><img src="images/logo.jpg" alt=""/></a>
+				 <a href="index.html"><img src="{% static 'university/images/logo.jpg'%}" alt=""/></a>
 			 </div>
 			 <div class="top-menu">
 				 <span class="menu"></span>
@@ -42,7 +43,7 @@
 		 </script>
 		 <!-- script-for-menu -->
 			 <div class="clearfix"></div>
-	 </div>	  
+	 </div>
 </div>
 <!---->
 	<!-- blog-page -->
@@ -55,18 +56,18 @@
 				<div class="blog-info">
 					<div class="blog-info-text">
 						<div class="blog-img">
-							<img src="images/img12.jpg" alt=""/>
+							<img src="{% static 'university/images/img12.jpg'%}" alt=""/>
 						</div>
 						<h4>Suspendisse vitae purus blandit, fringilla ipsum sodales, elementum risus.</h4>
 						<p class="snglp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage of Lorem Ipsum,
-							you need to be sure there isn't anything embarrassing hidden in the middle of text. 
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration  
+							you need to be sure there isn't anything embarrassing hidden in the middle of text.
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
 							in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
 							you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration  
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
 						in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
 						you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-						
+
 					</div>
 					<div class="comment-icons">
 						<ul>
@@ -80,10 +81,10 @@
 					<div class="admin-text">
 						<h5>Written By Admin</h5>
 						<div class="admin-text-left">
-							<a href="#"><img src="images/icon1.png" alt=""/></a>
+							<a href="#"><img src="{% static 'university/images/icon1.png'%}" alt=""/></a>
 						</div>
 						<div class="admin-text-right">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 							sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<span>View all posts by:<a href="#"> Admin </a></span>
 						</div>
@@ -94,12 +95,12 @@
 						<div class="media response-info">
 							<div class="media-left response-text-left">
 								<a href="#">
-									<img class="media-object" src="images/icon1.png" alt=""/>
+									<img class="media-object" src="{% static 'university/images/icon1.png'%}" alt=""/>
 								</a>
 								<h5><a href="#">Admin</a></h5>
 							</div>
 							<div class="media-body response-text-right">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								<ul>
 									<li>MARCH 21, 2013</li>
@@ -113,12 +114,12 @@
 										<h5><a href="#">Admin</a></h5>
 									</div>
 									<div class="media-body response-text-right">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 											sed do eiusmod tempor incididunt ut labore et.</p>
 										<ul>
 											<li>MARCH 21, 2014</li>
 											<li><a href="single.html">Reply</a></li>
-										</ul>		
+										</ul>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
@@ -128,17 +129,17 @@
 						<div class="media response-info">
 							<div class="media-left response-text-left">
 								<a href="#">
-									<img class="media-object" src="images/icon1.png" alt=""/>
+									<img class="media-object" src="{% static 'university/images/icon1.png'%}" alt=""/>
 								</a>
 								<h5><a href="#">Admin</a></h5>
 							</div>
 							<div class="media-body response-text-right">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 								<ul>
 									<li>MARCH 21, 2013</li>
 									<li><a href="single.html">Reply</a></li>
-								</ul>		
+								</ul>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -154,7 +155,7 @@
 						<input type="submit" value="SUBMIT" >
 					</form>
 				</div>
-			</div>	
+			</div>
 			<div class="col-md-4 single-page-right">
 				<div class="category blog-ctgry">
 					<h4>Categories</h4>
@@ -168,12 +169,12 @@
 						<a href="single.html" class="list-group-item">Cras justo odio</a>
 						<a href="single.html" class="list-group-item">Cras justo odio</a>
 					</div>
-				</div>	
+				</div>
 				<div class="recent-posts">
 					<h4>Recent posts</h4>
 					<div class="recent-posts-info">
 						<div class="posts-left sngl-img">
-							<a href="single.html"> <img src="images/img16.jpg" class="img-responsive zoom-img" alt=""/> </a>
+							<a href="single.html"> <img src="{% static 'university/images/img16.jpg'%}" class="img-responsive zoom-img" alt=""/> </a>
 						</div>
 						<div class="posts-right">
 							<label>MARCH 5, 2015</label>
@@ -182,10 +183,10 @@
 							<a href="single.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
 						</div>
 						<div class="clearfix"> </div>
-					</div>	
+					</div>
 					<div class="recent-posts-info">
 						<div class="posts-left sngl-img">
-							<a href="single.html"> <img src="images/img17.jpg" class="img-responsive zoom-img" alt=""/></a>
+							<a href="single.html"> <img src="{% static 'university/images/img17.jpg'%}" class="img-responsive zoom-img" alt=""/></a>
 						</div>
 						<div class="posts-right">
 							<label>MARCH 1, 2015</label>
@@ -196,11 +197,11 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="clearfix"> </div>
-				</div>				
+				</div>
 			</div>
 			<div class="clearfix"> </div>
-		</div>	
-</div>	
+		</div>
+</div>
 <!---->
 <div class="footer">
 	 <div class="container">
@@ -216,7 +217,7 @@
 					 <li><a href="index.html"><span></span>Home</a></li>
 					 <li><a href="about.html"><span></span>About</a></li>
 					 <li><a href="program.html"><span></span>Programs</a></li>
-					 <li><a href="blog.html"><span></span>Blog</a></li>	
+					 <li><a href="blog.html"><span></span>Blog</a></li>
 					 <li><a href="gallery.html"><span></span>Gallery</a></li>
 					 <li><a href="contact.html"><span></span>Contact</a></li>
 				 </ul>
@@ -227,7 +228,7 @@
 					 <li><a href="about.html"><span></span>History</a></li>
 					 <li><a href="about.html"><span></span>Departments</a></li>
 					 <li><a href="gallery.html"><span></span>Services</a></li>
-					 <li><a href="blog.html"><span></span>Guidancs</a></li>	
+					 <li><a href="blog.html"><span></span>Guidancs</a></li>
 					 <li><a href="about.html"><span></span>Team</a></li>
 					 <li><a href="contact.html"><span></span>Contact</a></li>
 				 </ul>
