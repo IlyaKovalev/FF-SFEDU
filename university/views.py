@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from .models import *
 def index(request):
-    context={}
+    lecturers = Lecturer.objects.all()
+    lecturers = lecturers[0:2]
+    context={'lecturers':lecturers}
     return render(request, 'university/index.html', context)
 
 def about(request):
@@ -27,4 +30,16 @@ def program(request):
 
 def single(request):
     context={}
-    return render(request, 'university/single.html', context)    
+    return render(request, 'university/single.html', context)
+def All_lecturers(request):
+    lecturers = Lecturer.objects.all()
+    context={'lecturers':lecturers}
+    return render(request, 'university/All_lecturers.html', context)
+def lecturers(request,lecturer_id):
+    lecturer= Lecturer.objects.filter(id=lecturer_id)
+    lector=lecturer[0]
+    context={'lector':lector, 'Name':lecturer[0].Name,'degree':lecturer[0].degree,
+             'cathedra':lecturer[0].cathedra,'additional_info':lecturer[0].additional_info,
+             'seniority':lecturer[0].seniority,'image':lecturer[0].image,
+             'work':lecturer[0].work}
+    return render(request,'university/wrapper/lecturers.html',context)
