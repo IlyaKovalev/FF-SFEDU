@@ -35,6 +35,64 @@ body a{
 .row{
 	margin:0;
 }
+.department{
+padding: 8px;
+background: #dddddd;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+.department  p{
+	font-size: 1.5em;
+	float: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+.department-about{
+	padding: 8px;
+background: #292929;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+.department-about p{
+	color: white;
+}
+.department-title{
+	padding: 8px;
+	margin-top: 22px;
+	margin-bottom: 22px;
+	background: #292929;
+}
+.department-left-content{
+	width: 600px;
+	background: #292929;
+	padding: 8px;
+	margin: 10px 10px 10px 10px;
+}
+
+.department-left-content-text{
+	background: #fff;
+	padding: 4px;
+}
+.department-left-content-text p h3{
+
+	font-family: 'Ubuntu', sans-serif;
+}
+.department-title h2{
+	font-size: 2.5em
+	float: left;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+.department-image {
+	height: 100%;
+	weight: 100%;
+}
+.department-image img{
+	height: 30%;
+}
+.departmentRow img{
+	height: 100%;
+	weight: 100%;
+}
 .lectureRow{
 	padding: 10px;
 background: #292929;
@@ -189,10 +247,27 @@ ul.callbacks_tabs.callbacks1_tabs {
 	padding-top:1.2em;
 }
 .blg-pic-list{
-	width: 60%;
-  float: left;
+	width: 50%;
+  float: center;
+}
+.blg-pic-list-dep{
+	width: 20%;
+  float: center;
+}
+.index_title{
+	background-color:#3e3e3e
+}
+.department-container{
+	width: 600px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.index_title h2{
+	margin-top: 20px;
 }
 .blg-pic-list img{
+background-size:100% 100%;
 	border-radius:50%;
   border: 2px solid #dcdcdc;
 }
@@ -298,18 +373,16 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 /*--welcome--*/
 .welcome{
-	background-image:url(http://s41.radikal.ru/i094/1608/ca/945abf6482f1.png)
 	padding:4em 0;
 	background-size:cover;
 	margin-bottom: 4px;
 }
 .welcome h2{
 	font-family: 'Ubuntu-Medium';
-	font-size:2.5em;
+	font-size:2.8em;
 	line-height:1.2em;
 	text-align:center;
-	color:#4dc47d;
-}
+  }
 .welcm_sec{
 	margin-top:3em;
 }
@@ -1504,7 +1577,7 @@ font-weight:600;
   padding: 3em 0;
 }
 .welcome h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 .campus_head h3, .testimonal h3, .news h3 {
   font-size: 1.65em;

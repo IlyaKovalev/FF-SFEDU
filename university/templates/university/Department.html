@@ -46,45 +46,61 @@
     			 <div class="clearfix" ></div>
     	 </div>
     </div>
-          <div class="container lecturersContainer">
-              <div  class="container-fluid ">
-              {% if lecturers %}
-              {% for lecturer in lecturers %}
 
-                <div  class="row lectureRow" onclick="location.href="{% url 'Lecturer' lecturer.id %}";">
-                  <div class="col-3">
-                    <div class="container">
 
-                    <div class="blg-pic-list">
 
-                      <img src="{{lecturer.image}}" class="img-responsive" alt=""/>
+    <div class="row departmentRow">
+      <div class="col-4">
+<div class="department-container">
+        <div class="department-left-content">
+{%for lecturer in department.lecturer_set.all%}
+          <div class="row departmentRow">
+            <div class="col-3">
 
-                    </div>
-                  </div>
-                  </div>
-                  <div class="col-9">
-                    <p><strong><a href="{% url 'Lecturer' lecturer.id %}">
-                      {{lecturer.Name}}</a></strong></p>
-                      <p>{{lecturer.degree}}</p>
-                      <p>Преподаваемые дисциплины</p>
-                      <ul>
-                        {% for discipline in lecturer.disciplines_set.all %}
-                        <li>{{discipline.discipline}}</li>
-                        {% endfor %}
-                      </ul>
-                  </div>
-              </div>
-                {% endfor %}
-                {% endif %}
-                </div>
+              <div class="container">
+                <div class="blg-pic-list">
+              <img src="{{lecturer.image}}" class="img-responsive" alt="">
+            </div>
+
+            </div>
+
+            </div>
+            <div class="col-9 ">
+              <div class="container department-left-content-text">
+              <p>{{lecturer.Name}}</p>
+              <p>{{lecturer.degree}}</p>
+              <p>{{lecturer.work}}</p>
+            </div>
           </div>
+          </div>
+          {%endfor%}
+        </div>
+      </div>
+      </div>
+      <div class="col-8">
+    <div class="container department">
+      <div class="container">
+        <div class="container-fluid department-title">
+          <h2>{{department.name}}</h2>
+        </div>
+      </div>
+    <div class="container department-about">
+
+      <p>{{department.about}}</p>
+    </div>
+
+    </div>
+  </div>
+  </div>
+
+
 
     <div class="footer">
        <div class="container">
          <div class="ftr-sec">
            <div class="row">
            <div class="col-4  ftr-grid">
-             <h3>Text Module</h3>
+             <h3> {{department.name}}</h3>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.</p>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.</p>
            </div>
@@ -120,5 +136,5 @@
        <div class="container">
        </div>
     </div>
-  </body>
-  </html>
+    </body>
+    </html>

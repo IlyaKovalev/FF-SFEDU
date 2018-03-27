@@ -31,6 +31,11 @@ def program(request):
 def single(request):
     context={}
     return render(request, 'university/single.html', context)
+def department(request,department_id):
+    department = Department.objects.filter(id=department_id)[0]
+    #lecturers = Department.lecturers_set.all()
+    context={'department':department}
+    return render(request, 'university/Department.html', context)
 def All_lecturers(request):
     lecturers = Lecturer.objects.all()
     context={'lecturers':lecturers}
