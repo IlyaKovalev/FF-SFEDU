@@ -36,10 +36,11 @@ body a{
 	margin:0;
 }
 .department{
-padding: 8px;
-background: #dddddd;
-margin-top: 8px;
-margin-bottom: 8px;
+width: 1000px;
+background: #fff;
+margin-top: 20px;
+margin-bottom: 15px;
+border-radius: 4px;
 }
 .department  p{
 	font-size: 1.5em;
@@ -47,33 +48,46 @@ margin-bottom: 8px;
 	font-family: 'Ubuntu', sans-serif;
 }
 .department-about{
+	width: 1000px;
 	padding: 8px;
-background: #292929;
-margin-top: 8px;
+background: #2e8569;
 margin-bottom: 8px;
 }
 .department-about p{
 	color: white;
 }
 .department-title{
-	padding: 8px;
-	margin-top: 22px;
-	margin-bottom: 22px;
 	background: #292929;
+	height: 40px;
+}
+.index-cathedral{
+border-top: 3px solid #000;
+border-bottom: 3px solid #000;
 }
 .department-left-content{
 	width: 600px;
+	float: left;
 	background: #292929;
 	padding: 8px;
 	margin: 10px 10px 10px 10px;
+	border-radius: 6px;
+}
+.department-left-content h2{
+	float: left;
+	color:  #fff;
 }
 
+.departmentRow{
+	border-radius: 6px;
+	margin: 7px  ;
+	padding: 5px;
+	background: #dddddd;
+}
 .department-left-content-text{
-	background: #fff;
+	background: #dddddd;
 	padding: 4px;
 }
 .department-left-content-text p h3{
-
 	font-family: 'Ubuntu', sans-serif;
 }
 .department-title h2{
@@ -83,16 +97,15 @@ margin-bottom: 8px;
 	color: white;
 }
 .department-image {
+	text-align: -webkit-center;
+	width: 80px;
+	height: 100px;
+}
+.department-image img {
 	height: 100%;
-	weight: 100%;
+	width: 100%;
 }
-.department-image img{
-	height: 30%;
-}
-.departmentRow img{
-	height: 100%;
-	weight: 100%;
-}
+
 .lectureRow{
 	padding: 10px;
 background: #292929;
@@ -257,12 +270,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .index_title{
 	background-color:#3e3e3e
 }
-.department-container{
-	width: 600px;
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
-}
+
 .index_title h2{
 	margin-top: 20px;
 }

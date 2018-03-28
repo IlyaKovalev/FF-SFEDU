@@ -12,11 +12,16 @@
     <link href="{% static 'university/css/style.css' %}" rel='stylesheet' type='text/css' />
     <!-- Custom Theme files -->
     <!--//theme-style-->
+    <link rel="stylesheet" href="{% static 'university/css/animate.css'%} ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="{% static 'university/js/jquery.min.js' %}"></script>
      <script src="{% static 'university/js/bootstrap.js' %}"></script>
-
+    <script src="{% static 'university/css/wow.min.js'%}">
+    </script>
+    <script>
+new WOW().init();
+</script>
   </head>
   <body>
     <div class="banner2">
@@ -47,27 +52,40 @@
     	 </div>
     </div>
 
-
-
-    <div class="row departmentRow">
+    <div class="row ">
       <div class="col-4">
-<div class="department-container">
+        <div class="department-left-content wow fadeIn">
+          <div class="container-fluid department-title">
+            <h2>Направления подготовки</h2>
+          </div>
+          {%for specialty in department.specialty_set.all %}
+          <div class="row departmentRow">
+              <div class="container department-left-content-text">
+                <ul>
+                <li><p><a> {{specialty.name}}</a></p></li>
+              </ul>
+
+              </div>
+
+          </div>
+          {%endfor%}
+        </div>
         <div class="department-left-content">
-{%for lecturer in department.lecturer_set.all%}
+          <div class="container-fluid department-title">
+            <h2>Сотрудники кафедры</h2>
+          </div>
+          {%for lecturer in department.lecturer_set.all%}
           <div class="row departmentRow">
             <div class="col-3">
-
-              <div class="container">
-                <div class="blg-pic-list">
-              <img src="{{lecturer.image}}" class="img-responsive" alt="">
-            </div>
-
-            </div>
-
+                <div class="blg-pic-list ">
+                  <div class="department-image">
+                    <img src="{{lecturer.image}}" class="img-responsive" alt="">
+                  </div>
+                </div>
             </div>
             <div class="col-9 ">
               <div class="container department-left-content-text">
-              <p>{{lecturer.Name}}</p>
+              <p><a href="{% url 'Lecturer' lecturer.id %}"> {{lecturer.Name}}</a></p>
               <p>{{lecturer.degree}}</p>
               <p>{{lecturer.work}}</p>
             </div>
@@ -75,22 +93,22 @@
           </div>
           {%endfor%}
         </div>
+
       </div>
-      </div>
+
       <div class="col-8">
-    <div class="container department">
-      <div class="container">
+    <div class="department">
         <div class="container-fluid department-title">
           <h2>{{department.name}}</h2>
         </div>
-      </div>
-    <div class="container department-about">
-
+    <div class="department-about">
       <p>{{department.about}}</p>
     </div>
-
     </div>
   </div>
+
+
+
   </div>
 
 

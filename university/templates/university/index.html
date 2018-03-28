@@ -170,10 +170,13 @@ $("#MyBanner").css('background', 'yellow')
 			 </div>
 			 <div class="col-md-3 testimonal">
 					<h3>Кафедры</h3>
-					<div class="testimnl-grid">
-						 <a href="#"><p>Aenean ultrices commodo risus, id sollicitudin nunc commodo at. Sed sagittis, lacus id viverra eleifend, enim magna.</p></a>
-						 <h5>John.Mr</h5>
-					</div>
+					<div class="index-cathedral">
+        <ul>
+          {% for department in departments %}
+          <li>{{department.name}}</li>
+          {% endfor %}
+        </ul>
+          </div>
 					<div class="testimnl-grid">
 						 <a href="#"><p>Aenean ultrices commodo risus, id sollicitudin nunc commodo at. Sed sagittis, lacus id viverra eleifend, enim magna.</p></a>
 						 <h5>John.Mr</h5>
